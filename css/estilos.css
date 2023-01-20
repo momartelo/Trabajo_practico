@@ -1,0 +1,393 @@
+/** CSS general para todo el html**/
+
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+::selection {
+    background-color: #7abcd8;
+    color: white;
+}
+
+/** CSS parte HEADER**/
+
+#contenedorheader {
+    /* border: 1px black solid; */
+    margin-top: 1%;
+    display: flex;
+    justify-content: center;
+}
+
+#logoheader {
+    /* border: 1px black solid; */
+    display: flex;
+    width: 20%;
+    justify-content: center;
+    padding: 1%;
+    background-color: #F8F0E7;
+
+}
+
+#datospersonalesheader {
+    /* border: 1px black solid; */
+    display: block;
+    width: 76%;
+}
+
+#datospersonalesheader h2 {
+    padding: 1%;
+    padding-left: 2%;
+    text-align: left;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#datospersonalesheader p {
+    font-size: 2.5em;
+    padding-left: 5%;
+    padding-top: 0.25%;
+    text-align: left;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/** CSS parte NAV*/
+
+#menuprincipal {
+    display: flex;
+    position: sticky;
+    top: 0px;
+    margin: 1%;
+    /* border: 1px black solid; */
+    flex-direction: column;
+    background-color: white;
+}
+
+#menuprincipal div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: #F8F0E7;
+    
+}
+
+#listamenu {
+    width: 97.5%;
+    display: flex;
+    justify-content: space-around;
+    /* border: 2px black solid; */
+    background-color: #F8F0E7;
+}
+
+#listamenu li {
+    list-style: none;
+    padding: 0.5%;
+}
+
+#menuprincipal li:hover {
+    background-color: lightblue;
+    font-weight: bold;
+}
+
+#listamenu li a {
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.25em;
+    text-decoration: none;
+    color: black;
+
+}
+
+/** CSS parte MAIN - PERFIL*/
+
+#contenedorperfil,
+#contenedorexperiencia,
+#contenedorformacion,
+#contenedorcompetencias,
+#contenedormisredes {
+    display: flex;
+    margin: 4% 0% 0%;
+    /* border: 1px black solid; */
+}
+
+#tituloperfil,
+#tituloexperiencia,
+#tituloformacion,
+#titulocompetencias,
+#titulomisredes {
+    background-color: #F8F0E7;
+    display: flex;
+    width: 20%;
+    /* border: 1px black solid; */
+    margin-left: 1%;
+    padding: 1%;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+#descripcionperfil,
+#descripcionexperiencia,
+#descripcionformacion,
+#descripcioncompetencias {
+    width: 70%;
+    padding: 1.5%;
+    padding-top: 0%;
+    padding-left: 4%;
+    text-align: justify;
+    border-bottom: 1px #f5dabe solid;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+}
+
+#descripcionexperiencia h5,
+#descripcionformacion h5 {
+    display: flex;
+    justify-content: right;
+    font-weight: normal;
+}
+
+#descripcionexperiencia h2,
+#descripcionformacion h2 {
+    display: flex;
+    justify-content: left;
+    /* font-weight: normal; */
+}
+
+#descripcionexperiencia h3,
+#descripcionformacion h3 {
+    display: flex;
+    justify-content: left;
+    font-weight: normal;
+    margin-top: 0.5%;
+    text-decoration: underline;
+}
+
+#descripcionexperiencia p,
+#descripcionformacion p,
+#descripcioncompetencias p {
+    display: flex;
+    justify-content: left;
+    font-weight: normal;
+    margin-top: 1%;
+}
+
+
+#competencias1 {
+    display: grid;
+    width: 70%;
+    padding: 1.5%;
+
+    padding-left: 4%;
+    grid-template-areas: "a b c d"
+        "e f g h"
+        "i j k l"
+        "m n o p"
+    ;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    border-bottom: 1px #f5dabe solid;
+}
+
+#misredes {
+    display: grid;
+    width: 70%;
+    padding: 1.5%;
+
+    padding-left: 4%;
+    grid-template-areas: "a b c d"
+        "e f g h"
+        "i j l m"
+    ;
+    grid-template-columns: 35px 1fr 35px 1fr;
+    grid-template-rows: repeat(2, 35px);
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    border-bottom: 1px #f5dabe solid;
+    align-items: center;
+    
+}
+
+/** CSS parte FOOTER*/
+
+#contenedorfooter {
+    /* border: 1px black solid; */
+    margin: 1%;
+    position: sticky;
+    bottom: 0px;
+    border: 1px #F8F0E7 solid;
+    background-color: rgb(248,240,231);
+    }
+
+#articulofooter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 97.5%;
+    /* margin: 1%; */
+    /* border: 1px red solid; */
+
+}
+
+.itemfooter1 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 30%;
+    margin: 0% 1% 0% 1%;
+    padding: 0.5%;
+    text-align: center;
+    /*border: 2px rgb(63, 98, 196) dashed;*/
+
+}
+
+.itemfooter2 {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 30%;
+    margin: 0% 1% 0% 1%;
+    padding: 0.5%;
+    text-align: center;
+
+    /*border: 2px rgb(63, 98, 196) dashed;*/
+
+}
+
+#mailytexto{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 0.5%;
+}
+
+.itemfooter1 p, a {
+    font-family: 'Arial Narrow';
+    font-size: 16px;
+    padding-top: 0.5%;
+}
+
+.itemfooter2 p{
+    padding-top: 0.5%;
+    font-family: 'Arial Narrow';
+    font-size: 16px;
+}
+
+.mapa{
+    width: 30%;
+    padding: 0.5%;
+}
+
+footer div a:link {
+    color: blue;
+}
+
+footer div a:hover {
+    background-color: lightblue;
+}
+
+footer div a:visited {
+    color: blue;
+}
+
+
+
+/** CSS parte FORMULARIO*/
+
+.maincontacto {
+    display: flex;
+    /* border: 1px black solid; */
+    margin: 1%;
+    justify-content: center;
+}
+
+.formulario{
+    display: flex;
+    /* border: 1px red solid; */
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+    /* background-color: #F8F0E7; */
+}
+
+.titulo1contacto {
+    /* border: 1px black solid; */
+    border-radius: 10px;
+    margin: 1%;
+    font-size: 2em;
+    padding: 1%;
+    background-color: #F8F0E7;
+    font-weight: bold;
+    font-family:'Arial Narrow', Arial, sans-serif;
+}
+
+
+.titulo2contacto{
+    text-align: justify;
+    /* border: 1px black solid; */
+    margin: 1%;
+    font-size: 1.1em;
+    font-family:'Arial Narrow', Arial, sans-serif;
+}
+
+form{
+    /* border: 1px blue solid; */
+    width: 80%;
+
+ 
+}
+
+form p{
+    display: flex;
+    flex-direction: column;
+    font-family:'Arial Narrow', Arial, sans-serif;
+    }
+
+form p label{
+    margin: 1%;
+    padding: 1%;
+    /* border: 1px black solid; */
+    background-color: #F8F0E7;
+
+}
+
+form p input{
+    margin: 1%;
+    padding: 1%;
+    border: 0.25px lightgray solid;
+}
+
+#mensaje{
+    height: 100px;
+    font-family:'Arial Narrow', Arial, sans-serif;
+    padding: 1%;
+    margin: 1%;
+    border: 0.25px lightgray solid;
+}
+
+.aviso {
+    display: flex;
+    /* border: 1px black solid; */
+    padding-left: 1%;
+    margin: 1%;
+    margin-bottom: 1%;
+    font-family: 'Arial Narrow';
+    font-size: 0.75em;
+}
+
+#botones{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 2%;
+}
+
+
+
+button {
+    width: 80px;
+    height: 30px;
+    margin-left: 5px;
+    margin-top: 1%;
+    border-radius: 5px;
+    border: 1px black solid;
+}

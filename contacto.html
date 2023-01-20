@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/estilos.css">
+    <link rel="icon" href="/img/Icono.png">
+    
+    <title>Curriculum Vitae</title>
+</head>
+
+<body>
+    <header id="contenedorheader">
+        <div id="logoheader">
+            <img src="/img/Perfil.png" alt="Foto CV" height="100px">
+        </div>
+        <div id="datospersonalesheader">
+            <h2>Curriculum Vitae</h2>
+            <p>Martin Oscar <strong>Martelo</strong></p>
+        </div>
+    </header>
+    <nav id="menuprincipal">
+        <div>
+            <ul id="listamenu">
+                <li><a href="/index.html#">Inicio</a></li>
+                <li><a href="/index.html#">Perfil</a></li>
+                <li><a href="/index.html#primerareferencia">Experiencia</a></li>
+                <li><a href="/index.html#segundareferencia">Formacion</a></li>
+                <li><a href="/index.html#tercerareferencia">Competencias</a></li>
+                <li><a href="/index.html#cuartareferencia">Mis Redes</a></li>
+            </ul>
+        </div>
+    </nav>
+    <main class="maincontacto">
+        <div class="formulario">
+            <div class="titulo1contacto">
+                <p>Formulario de Contacto</p>
+            </div>
+            <div class="titulo2contacto">
+                <p>Completa el formulario para mandarme un mensaje o una consulta </p>
+            </div>
+            <form action="" method="dialog">
+                <p>
+                    <label for="nombre" id="colocar_nombre" class="colocar_nombre">Nombre
+                        <span class="obligatorio">*</span>
+                    </label>
+                    <input type="text" name="introducir_nombre" id="nombre" required="obligatorio"
+                        placeholder="Escribe tu nombre">
+                </p>
+                <p>
+                    <label for="email" class="colocar_email">Email
+                        <span class="obligatorio">*</span>
+                    </label>
+                    <input type="email" name="introducir_email" id="email" required="obligatorio"
+                        placeholder="Escribe tu Email">
+                </p>
+                <p>
+                    <label for="telefono" class="colocar_telefono">Teléfono
+                    </label>
+                    <input type="tel" name="introducir_telefono" id="telefono" placeholder="Escribe tu teléfono">
+                </p>
+                <p>
+                    <label for="asunto" class="colocar_asunto">Asunto
+                        <span class="obligatorio">*</span>
+                    </label>
+                    <input type="text" name="introducir_asunto" id="asunto" required="obligatorio"
+                        placeholder="Escribe un asunto">
+                </p>
+                <p>
+                    <label for="mensaje" class="colocar_mensaje">Mensaje
+                        <span class="obligatorio">*</span>
+                    </label>
+                    <textarea name="introducir_mensaje" class="texto_mensaje" id="mensaje" required="obligatorio"
+                        placeholder="Deja aquí tu comentario..."></textarea>
+                </p>
+                <p class="aviso">
+                    <span class="obligatorio"> * los campos son obligatorios. </span>
+                </p>
+
+                <div id="botones">
+                <button type="button" onclick="captura()" name="enviar_formulario" id="enviar">
+                    <p>Enviar</p>
+                </button>
+           
+                <button type="reset" name="reset_formulario" id="resetear">
+                    <p>Reset</p>
+                </button>
+           
+                </div>
+            </form>
+
+        </div>
+
+    </main>
+
+    <footer id="contenedorfooter">
+        <article id="articulofooter">
+            <div class="itemfooter1">
+                <p><strong> <u> Contacto: </u> </strong> </p>
+                <p id="mailytexto"> <img src="/img/Mail3.png" alt="" width="25px">&nbsp;Email: <a
+                        href="mailto:momartelo@yahoo.com.ar">momartelo@yahoo.com.ar </a> </p>
+                <p id="mailytexto"> <img src="/img/whatsapp-free-icon-font.png" alt="" width="20px">&nbsp; Tel. /
+                    Whatsapp: <a href="tel:+5492235586633">+54 9 223 5586633 </a> </p>
+                <p id="mailytexto"> <img src="/img/contacto.png" alt="" width="20px">&nbsp;<a
+                        href="contacto.html">Formulario de contacto </a> </p>
+            </div>
+            <div class="itemfooter2">
+                <p> <strong> <u> Direccion:</u> </strong> </p>
+                <p>Olazabal 1755 entre San Martin y Rivadavia </p>
+                <p> Mar del Plata - B7600CBC </p>
+            </div>
+            <div class="mapa">
+                <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3144.3543420856386!2d-57.56467868493144!3d-37.99219465204693!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9584d9525a01b1b1%3A0xb260429c046abba7!2sCBC%2C%20Olaz%C3%A1bal%201755%2C%20B7600%20Mar%20del%20Plata%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1674044165036!5m2!1ses!2sar" width="300" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+            </div>
+
+        </article>
+    </footer>
+    <script type="text/javascript" src="/js/compueba.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script> -->
+</body>
+</html>

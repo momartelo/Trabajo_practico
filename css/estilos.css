@@ -38,17 +38,19 @@
 
 #datospersonalesheader h2 {
     padding: 1%;
-    padding-left: 2%;
+    padding-left: 5%;
     text-align: left;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
 }
 
 #datospersonalesheader p {
     font-size: 2.5em;
-    padding-left: 5%;
+    padding-left: 12%;
     padding-top: 0.25%;
     text-align: left;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
 }
 
 /** CSS parte NAV*/
@@ -275,6 +277,8 @@
 .mapa{
     width: 30%;
     padding: 0.5%;
+    display: flex;
+    justify-content: center;
 }
 
 footer div a:link {
@@ -390,4 +394,5 @@ button {
     margin-top: 1%;
     border-radius: 5px;
     border: 1px black solid;
+    font-size: 1em;
 }
